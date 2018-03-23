@@ -1,7 +1,4 @@
 //Marawan El Sharkawi
-//CSCI 301-Section 1
-//#cs301175
-//Project 3
 
 /*
     Recursion is a technique in programming which allows a function to call itself. It is one of the ways to make repeated
@@ -10,31 +7,31 @@ returned from all the functions it has called to determine the solution of the m
 file displays it then find paths from its start to its end using recursion.
 
     The program uses three data structures:
-ïTwo integers variables called ìrî and ìcî, these two integers hold the numbers of rows and columns of the maze respectively
+‚Ä¢Two integers variables called ‚Äúr‚Äù and ‚Äúc‚Äù, these two integers hold the numbers of rows and columns of the maze respectively
 being read from the file contains the maze.
 
-ïThree char variables, one called ìlineEndî to hold the character at the end of the line to start reading a new line.
-The second called ìspace ìwhich the program uses to print a blank space whenever there is no walls in the maze. And the third one
-is called ìpathî the program uses it to print a dot whenever there is a path that solves the maze.
+‚Ä¢Three char variables, one called ‚ÄúlineEnd‚Äù to hold the character at the end of the line to start reading a new line.
+The second called ‚Äúspace ‚Äúwhich the program uses to print a blank space whenever there is no walls in the maze. And the third one
+is called ‚Äúpath‚Äù the program uses it to print a dot whenever there is a path that solves the maze.
 
-ïA two-dimensional array called ìmazeî, this array holds very character read from the file, rows of the maze in one of its
+‚Ä¢A two-dimensional array called ‚Äúmaze‚Äù, this array holds very character read from the file, rows of the maze in one of its
  dimensions and columns in the other dimension. A program constant sets the maximum value of the numbers of rows and columns of
  the maze the program can read and find a path through.
 
     The program uses four functions:
-ïopenFile() , it takes ifstream which is a stream class to read from the file contains the maze as a parameter and its being
+‚Ä¢openFile() , it takes ifstream which is a stream class to read from the file contains the maze as a parameter and its being
 passed by reference. The function asks the user to input the name of the file contains the maze to open it, if the name of the
 file does not exist or the user entered a false file name the function keep asking the user to enter the name of the file until
 the users enters a correct file name.
 
-ïreadFile(),  it takes ifstream parameter, maze two dimensional array, and two integer variables passed by reference to refer
+‚Ä¢readFile(),  it takes ifstream parameter, maze two dimensional array, and two integer variables passed by reference to refer
 to the number of rows and columns of the maze. The function reads the number of rows and columns of the maze from the opened file,
  saves the characters of each row and column of the maze into the two-dimensional array.
 
-ïdisplay(), it takes maze two dimensional array, and two integer variables to refer to the number of rows and columns of the
+‚Ä¢display(), it takes maze two dimensional array, and two integer variables to refer to the number of rows and columns of the
 maze, the functions prints out the characters saved into the two dimensional array which are the maze read from the file.
 
-ïpathFinder(), it takes maze two dimensional array, two integer variables to refer to the dimensions of the start position of
+‚Ä¢pathFinder(), it takes maze two dimensional array, two integer variables to refer to the dimensions of the start position of
 the maze and two integer variables to refer to the number of rows and columns of the maze. The function finds all the possible
 paths from the start position of the maze till the end position, prints a space whenever there are no walls and prints a dot
 wherever there is a path that will lead to the end of the maze, the function find the paths using recursion technique.
